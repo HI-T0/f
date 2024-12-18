@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Habit Tracker</div>
+        <button class="add-habit-btn" onclick="showEmojiGallery()">+</button>
+
+        <div class="emoji-gallery">
+            <div class="emoji-item" onclick="addHabit('💪', 'Workout')">
+                <div class="emoji">💪</div>
+                <div class="habit-title">Workout</div>
+            </div>
+            <div class="emoji-item" onclick="addHabit('📚', 'Reading')">
+                <div class="emoji">📚</div>
+                <div class="habit-title">Reading</div>
+            </div>
+            <div class="emoji-item" onclick="addHabit('🧘‍♀️', 'Yoga')">
+                <div class="emoji">🧘‍♀️</div>
+                <div class="habit-title">Yoga</div>
+            </div>
+            <div class="emoji-item" onclick="addHabit('🏃‍♂️', 'Running')">
+                <div class="emoji">🏃‍♂️</div>
+                <div class="habit-title">Running</div>
+            </div>
+        </div>
+
+        <div class="dashboard"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
